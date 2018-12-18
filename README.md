@@ -1,5 +1,5 @@
-# GOVpy
-Collection of Government APIs
+# government_data
+Attempt at building the most complete collection of government data related functionality. 
 
 ## Contributors
 Who|Github Contact|What|

@@ -1,4 +1,5 @@
 from base.api import API
+from other.imf.imf_data_structure import IMF_DataStructure
 import json
 
 class IMF(API):
@@ -15,7 +16,10 @@ class IMF(API):
     def data_structure(self, database_id):
         url = "http://dataservices.imf.org/REST/SDMX_JSON.svc/DataStructure/{0}".format(database_id)
         response = super().get_response(url)
-        print(response.data)
+        json_response = json.loads(response.data)
+        data_structure = IMF_DataStructure(database_id, json_response)
+        return data_structure
+
 
     def compact_data(self, database_id):
         url = "http://dataservices.imf.org/REST/SDMX_JSON.svc/CompactData/{0}/".format(database_id)
@@ -25,7 +29,8 @@ class IMF(API):
     def metadata_structure(self, database_id):
         url = "http://dataservices.imf.org/REST/SDMX_JSON.svc/MetadataStructure/{0}".format(database_id)
         response = super().get_response(url)
-        print(response.data)
+        json_response = json.loads(response.data)
+        return json_response
 
     def generic_metadata(self, database_id):
         url = "http://dataservices.imf.org/REST/SDMX_JSON.svc/GenericMetadata/{0}/".format(database_id)

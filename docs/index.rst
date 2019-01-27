@@ -8,8 +8,11 @@ Welcome to government_data's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents
 
+   usage/installation
+   usage/welcome
+   usage/bureau_labor_statistics
 
 
 Indices and tables

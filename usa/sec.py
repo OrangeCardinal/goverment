@@ -3,7 +3,7 @@ import certifi
 import json
 import urllib3
 
-class EDGAR():
+class EDGAR:
     """
     https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
 

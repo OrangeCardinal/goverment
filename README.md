@@ -3,9 +3,14 @@ Attempt at building the most complete collection of government data related func
  
 
 ## How to Use
-1. Set the environment variable
+1. Create a api key @ api.data.gov ()
 
-2. 
+2. Set the environment variable API_DATA_GOV_KEY 
+Various government services require this key, as such it must be set for all sources to work. 
+
+3. Set the environment variable GOVERNMENT_DOWNLOAD_DIRECTORY
+Various calls will download data as requested and will be written into the directory specified. 
+ 
 ## Contributors
 Who|Github Contact|What|
 ---|---|---|

@@ -1,4 +1,4 @@
-from international.imf.imf import IMF
+from government.international.imf.imf import IMF
 
 #bls = BureauOfLaborStatistics()
 #popular_series = bls.popular_series()

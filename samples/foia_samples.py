@@ -1,5 +1,3 @@
-from usa.foia import FreedomOfInformationAct
+print("test")
 
-
-foia = FreedomOfInformationAct()
-foia.agency_components()
+# oia = FreedomOfInformationAct()

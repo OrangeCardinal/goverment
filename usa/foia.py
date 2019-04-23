@@ -1,4 +1,6 @@
-from base.api import API
+import os
+from base.api   import API
+
 class FreedomOfInformationAct(API):
     """
     Wrapper for the API Endpoints
@@ -6,6 +8,11 @@ class FreedomOfInformationAct(API):
 
 
     def agency_components(self):
-        url = "https://api.foia.gov/api/agency_components"
-        response = self.get_response(url)
-        print(response.data)
+        print(os.environ)
+        return
+        #api_key = os.environ['API_DATA_GOV_KEY']
+
+
+        #url = "https://api.foia.gov/api/agency_components?api_key={0}".format(api_key)
+        #response = self.get_response(url)
+        #print(response.data)

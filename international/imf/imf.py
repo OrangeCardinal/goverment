@@ -1,6 +1,6 @@
 from base.api import API
-from other.imf.imf_data_structure import IMF_DataStructure
-from other.imf.imf_data_set import IMF_DataSet
+from international.imf.imf_data_structure import IMF_DataStructure
+from international.imf.imf_data_set import IMF_DataSet
 import json
 
 class IMF(API):
